@@ -424,6 +424,7 @@ footer {
   width: 99.9vw;
   max-width: 100%;
   text-align: center;
+  color: white;
 }
 .container .about-container h1 {
   font-size: 4rem;
@@ -454,6 +455,7 @@ footer {
   padding-top: 10px;
   margin-bottom: 25px;
   align-self: center;
+  color: white;
 }
 .container .team-2 .images {
   display: flex;
@@ -475,4 +477,5 @@ footer {
   padding-top: 10px;
   margin-bottom: 25px;
   align-self: center;
+  color: white;
 }
