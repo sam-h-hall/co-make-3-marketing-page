@@ -3,16 +3,37 @@
     justify-content: center;
     position: fixed;
     z-index: 2;
-    flex-direction: row-reverse;
+    flex-direction: row;
     height: 5vh;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
+    max-width: 100%;
     background-color: black;
+    top: 0;
+
+    @media @phone {
+        flex-direction: column;
+        position: relative;
+    }
 
     a {
         align-self: center;
         text-decoration: none;
-        color: #00A4E0;//#0069D9;//rgb(0, 84, 138);//white;
+        color: #00A4E0;
+
+        @media @phone {
+            width: 100vw;
+            max-width: 100%;
+            text-align: center;
+            font-size: 1rem;
+            padding: 1% 0 1% 0;
+        }
+    }
+
+    .about-link {
+        @media @phone {
+            border-bottom: 2px solid white;
+        }
     }
 
     img {
@@ -20,5 +41,11 @@
         height: 70%;
         align-self: center;
         padding: 0 50px 0 50px;
+
+        @media @phone {
+            visibility: hidden;
+            width: 0%;
+            height: 0%;
+        }
     }
 }
